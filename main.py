@@ -1,8 +1,7 @@
 import cv2
 
-from lib.frame import Frame
-from lib.point import Point
-from lib.system import System
+from src.frame import Frame
+from src.system import System
 
 if __name__ == '__main__':
     ORB_CONFIG = {
