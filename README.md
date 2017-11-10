@@ -22,7 +22,7 @@ brew install g2o
 brew install eigen
 ```
 
-In order to build the bindings you have to navigate to the `bindings` folder and run the default `cmake`, `make` command chain.
+To build the bindings you have to navigate to the `bindings` folder and run the default `cmake`, `make` command chain.
 ```
 cd bindings && mkdir build && cd build
 cmake ..
