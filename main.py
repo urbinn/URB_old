@@ -1,20 +1,7 @@
+import urbg2o
+import numpy as np
 import cv2
 
-from src.frame import Frame
-from src.system import System
-
-if __name__ == '__main__':
-    ORB_CONFIG = {
-        "edgeThreshold": 1,
-        "patchSize": 15,
-        "nlevels": 1,
-        "fastThreshold": 1,
-        "scaleFactor": 1.2,
-        "WTA_K": 2,
-        "scoreType": cv2.ORB_HARRIS_SCORE,
-        "firstLevel": 0,
-        "nfeatures": 2000
-    }
-
-    system = System(ORB_CONFIG)
+pose = urbg2o.poseOptimization(np.ones((100, 6), dtype=np.float64, order='f'), np.ones((100, 6), dtype=np.float64, order='f'))
+print(pose)
 
